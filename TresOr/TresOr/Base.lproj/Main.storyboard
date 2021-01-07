@@ -45,20 +45,85 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EVb-tG-urK">
+                                <rect key="frame" x="20" y="158.5" width="374" height="683.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="WN5-p6-t7p" customClass="TableViewCell" customModule="TresOr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WN5-p6-t7p" id="WeS-CR-bUy">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kM-A7-GRY">
+                                                    <rect key="frame" x="20" y="11" width="50" height="78"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Nhw-Fu-bPY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6kM-A7-GRY" firstAttribute="top" secondItem="WeS-CR-bUy" secondAttribute="topMargin" id="0Xq-Tx-5eB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6kM-A7-GRY" secondAttribute="bottom" id="cRf-8i-mmF"/>
+                                                <constraint firstItem="6kM-A7-GRY" firstAttribute="leading" secondItem="WeS-CR-bUy" secondAttribute="leadingMargin" id="zsW-Eb-w81"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="6kM-A7-GRY" id="WbT-kJ-rcp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="100" id="NBT-2p-PvF" customClass="TableViewCell2" customModule="TresOr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="374" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NBT-2p-PvF" id="acp-eU-CgO">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cc-og-VT8">
+                                                    <rect key="frame" x="304" y="11" width="50" height="78"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Idu-bu-4qc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1cc-og-VT8" firstAttribute="trailing" secondItem="acp-eU-CgO" secondAttribute="trailingMargin" id="BrJ-qT-L9A"/>
+                                                <constraint firstItem="1cc-og-VT8" firstAttribute="top" secondItem="acp-eU-CgO" secondAttribute="topMargin" id="mFW-4j-6hB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1cc-og-VT8" secondAttribute="bottom" id="qGO-Xh-DAP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="1cc-og-VT8" id="t0f-9O-fDu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EVb-tG-urK" secondAttribute="trailing" constant="20" id="5c0-O5-8mP"/>
                             <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="ilr-7b-WKY" secondAttribute="trailing" constant="100" id="HJi-Ri-ntj"/>
                             <constraint firstItem="ilr-7b-WKY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="HNN-o3-Tze"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HA7-D9-ieE" secondAttribute="trailing" constant="20" id="POc-Fz-Xvp"/>
                             <constraint firstItem="HA7-D9-ieE" firstAttribute="top" secondItem="ilr-7b-WKY" secondAttribute="bottom" constant="20" id="Rf5-sA-Sjk"/>
+                            <constraint firstItem="EVb-tG-urK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jaa-k5-oL1"/>
+                            <constraint firstItem="EVb-tG-urK" firstAttribute="top" secondItem="HA7-D9-ieE" secondAttribute="bottom" constant="20" id="jiV-E5-Wkw"/>
                             <constraint firstItem="HA7-D9-ieE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kTg-bL-qwf"/>
                             <constraint firstItem="ilr-7b-WKY" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="kk9-la-wQH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EVb-tG-urK" secondAttribute="bottom" constant="20" id="qhi-5W-YGc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="boutonAjouter" destination="8cU-fd-Orv" id="5B6-4Z-J1M"/>
+                        <outlet property="listeTransaction" destination="EVb-tG-urK" id="B5a-gS-lKJ"/>
                         <outlet property="quantite" destination="gEW-nN-5I7" id="Hup-fP-wzx"/>
                         <outlet property="titre" destination="ilr-7b-WKY" id="dbi-oW-aHA"/>
                         <outlet property="valeurPortefeuille" destination="7vB-GG-2ti" id="7f3-IU-Kx9"/>

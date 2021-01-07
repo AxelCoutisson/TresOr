@@ -13,6 +13,8 @@
 		DCD3BD2A25A6ED9E0049342C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3BD2825A6ED9E0049342C /* Main.storyboard */; };
 		DCD3BD2C25A6ED9E0049342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3BD2B25A6ED9E0049342C /* Assets.xcassets */; };
 		DCD3BD2F25A6ED9E0049342C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3BD2D25A6ED9E0049342C /* LaunchScreen.storyboard */; };
+		DCD3BD3825A722F60049342C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD3725A722F60049342C /* TableViewCell.swift */; };
+		DCD3BD3B25A723280049342C /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD3A25A723280049342C /* TableViewCell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DCD3BD2B25A6ED9E0049342C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD3BD2E25A6ED9E0049342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCD3BD3025A6ED9E0049342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD3BD3725A722F60049342C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DCD3BD3A25A723280049342C /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		DCD3BD1625A6ED9E0049342C = {
 			isa = PBXGroup;
 			children = (
+				DCD3BD3A25A723280049342C /* TableViewCell2.swift */,
+				DCD3BD3725A722F60049342C /* TableViewCell.swift */,
 				DCD3BD2125A6ED9E0049342C /* TresOr */,
 				DCD3BD2025A6ED9E0049342C /* Products */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD3BD3B25A723280049342C /* TableViewCell2.swift in Sources */,
 				DCD3BD2725A6ED9E0049342C /* ViewController.swift in Sources */,
+				DCD3BD3825A722F60049342C /* TableViewCell.swift in Sources */,
 				DCD3BD2325A6ED9E0049342C /* AppDelegate.swift in Sources */,
 				DCD3BD2525A6ED9E0049342C /* SceneDelegate.swift in Sources */,
 			);
