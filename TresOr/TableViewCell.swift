@@ -20,5 +20,7 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var descri: UILabel!
+    @IBOutlet weak var catego: UILabel!
     
 }
