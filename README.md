@@ -5,7 +5,7 @@ TresOr est une application pour IOS permettant de renseigner vos différentes d�
 
 ## Comment charger le projet correctement ?
 **Ne pas charger uniquement le fichier TresOr.xcodeproj**
-Ouvre le fichier avec xcode afin qu'il puisse charger le projet ainsi que les pods qui sont nécessaire à l'affichage des graphs
+->Ouvrez le fichier avec xcode afin qu'il puisse charger le projet ainsi que les pods qui sont nécessaire à l'affichage des graphs
 
 ## Informations de merge
 Dans le fichier old se trouve les deux anciennes partie de projet non merge rien n'a été touché
