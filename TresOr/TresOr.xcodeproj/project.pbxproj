@@ -3,21 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B91193225B8328A00795489 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91193125B8328A00795489 /* AddViewController.swift */; };
+		5B91193825B832BA00795489 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91193725B832BA00795489 /* TableViewCell2.swift */; };
+		5B91193B25B832C200795489 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91193A25B832C200795489 /* TableViewCell.swift */; };
+		5BA2A40925AF03DF00BCE56E /* NSUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2A40825AF03DF00BCE56E /* NSUIColor.swift */; };
+		75BFFD77F067895F2ADB7136 /* Pods_TresOr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6E3DC72F554A907D9830C3 /* Pods_TresOr.framework */; };
 		DCD3BD2325A6ED9E0049342C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD2225A6ED9E0049342C /* AppDelegate.swift */; };
 		DCD3BD2525A6ED9E0049342C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD2425A6ED9E0049342C /* SceneDelegate.swift */; };
 		DCD3BD2725A6ED9E0049342C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD2625A6ED9E0049342C /* ViewController.swift */; };
 		DCD3BD2A25A6ED9E0049342C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3BD2825A6ED9E0049342C /* Main.storyboard */; };
 		DCD3BD2C25A6ED9E0049342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3BD2B25A6ED9E0049342C /* Assets.xcassets */; };
 		DCD3BD2F25A6ED9E0049342C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3BD2D25A6ED9E0049342C /* LaunchScreen.storyboard */; };
-		DCD3BD3825A722F60049342C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD3725A722F60049342C /* TableViewCell.swift */; };
-		DCD3BD3B25A723280049342C /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3BD3A25A723280049342C /* TableViewCell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006AA3D5E92F909110C82322 /* Pods-TresOr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TresOr.release.xcconfig"; path = "Target Support Files/Pods-TresOr/Pods-TresOr.release.xcconfig"; sourceTree = "<group>"; };
+		5B91193125B8328A00795489 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		5B91193725B832BA00795489 /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		5B91193A25B832C200795489 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5BA2A40825AF03DF00BCE56E /* NSUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUIColor.swift; sourceTree = "<group>"; };
 		DCD3BD1F25A6ED9E0049342C /* TresOr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TresOr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD3BD2225A6ED9E0049342C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD3BD2425A6ED9E0049342C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +34,8 @@
 		DCD3BD2B25A6ED9E0049342C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD3BD2E25A6ED9E0049342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCD3BD3025A6ED9E0049342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD3BD3725A722F60049342C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		DCD3BD3A25A723280049342C /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		F8888DF02D27B3595D800182 /* Pods-TresOr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TresOr.debug.xcconfig"; path = "Target Support Files/Pods-TresOr/Pods-TresOr.debug.xcconfig"; sourceTree = "<group>"; };
+		FE6E3DC72F554A907D9830C3 /* Pods_TresOr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TresOr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,19 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BFFD77F067895F2ADB7136 /* Pods_TresOr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60469B94E17B7D761956A069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E3DC72F554A907D9830C3 /* Pods_TresOr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		950D53B10474243B1D41895D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8888DF02D27B3595D800182 /* Pods-TresOr.debug.xcconfig */,
+				006AA3D5E92F909110C82322 /* Pods-TresOr.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DCD3BD1625A6ED9E0049342C = {
 			isa = PBXGroup;
 			children = (
-				DCD3BD3A25A723280049342C /* TableViewCell2.swift */,
-				DCD3BD3725A722F60049342C /* TableViewCell.swift */,
+				5B91193725B832BA00795489 /* TableViewCell2.swift */,
+				5B91193A25B832C200795489 /* TableViewCell.swift */,
 				DCD3BD2125A6ED9E0049342C /* TresOr */,
 				DCD3BD2025A6ED9E0049342C /* Products */,
+				950D53B10474243B1D41895D /* Pods */,
+				60469B94E17B7D761956A069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +93,12 @@
 				DCD3BD2225A6ED9E0049342C /* AppDelegate.swift */,
 				DCD3BD2425A6ED9E0049342C /* SceneDelegate.swift */,
 				DCD3BD2625A6ED9E0049342C /* ViewController.swift */,
+				5B91193125B8328A00795489 /* AddViewController.swift */,
 				DCD3BD2825A6ED9E0049342C /* Main.storyboard */,
 				DCD3BD2B25A6ED9E0049342C /* Assets.xcassets */,
 				DCD3BD2D25A6ED9E0049342C /* LaunchScreen.storyboard */,
 				DCD3BD3025A6ED9E0049342C /* Info.plist */,
+				5BA2A40825AF03DF00BCE56E /* NSUIColor.swift */,
 			);
 			path = TresOr;
 			sourceTree = "<group>";
@@ -80,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD3BD3325A6ED9E0049342C /* Build configuration list for PBXNativeTarget "TresOr" */;
 			buildPhases = (
+				48DC9CDFA076F1B569CF2D25 /* [CP] Check Pods Manifest.lock */,
 				DCD3BD1B25A6ED9E0049342C /* Sources */,
 				DCD3BD1C25A6ED9E0049342C /* Frameworks */,
 				DCD3BD1D25A6ED9E0049342C /* Resources */,
+				E979329747DEEC71303FD496 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,15 +170,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48DC9CDFA076F1B569CF2D25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TresOr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E979329747DEEC71303FD496 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TresOr/Pods-TresOr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TresOr/Pods-TresOr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TresOr/Pods-TresOr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCD3BD1B25A6ED9E0049342C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD3BD3B25A723280049342C /* TableViewCell2.swift in Sources */,
+				5B91193825B832BA00795489 /* TableViewCell2.swift in Sources */,
 				DCD3BD2725A6ED9E0049342C /* ViewController.swift in Sources */,
-				DCD3BD3825A722F60049342C /* TableViewCell.swift in Sources */,
+				5B91193225B8328A00795489 /* AddViewController.swift in Sources */,
 				DCD3BD2325A6ED9E0049342C /* AppDelegate.swift in Sources */,
+				5BA2A40925AF03DF00BCE56E /* NSUIColor.swift in Sources */,
+				5B91193B25B832C200795489 /* TableViewCell.swift in Sources */,
 				DCD3BD2525A6ED9E0049342C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +367,7 @@
 		};
 		DCD3BD3425A6ED9E0049342C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8888DF02D27B3595D800182 /* Pods-TresOr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +386,7 @@
 		};
 		DCD3BD3525A6ED9E0049342C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006AA3D5E92F909110C82322 /* Pods-TresOr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
