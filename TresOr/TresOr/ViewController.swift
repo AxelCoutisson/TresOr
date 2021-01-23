@@ -70,6 +70,20 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         listeTransaction.dataSource = self
         setupPieChart()
+        
+    }
+    // MARK: - Envoie des informations
+    var data: String?
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? AddViewController {
+            vc.data = "aaaa"
+        }
+        
+    }
+    // MARK: - Retour sur la vue
+    @IBAction func retour(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
     }
     
 }

@@ -88,6 +88,7 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDataS
         return true
     }
     
+    var data: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,8 +98,18 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDataS
         listeTransaction.dataSource = self
         picker.dataSource = self
         picker.delegate = self
+        if let sometexttest = data{
+            print(sometexttest)
+        }
         
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ViewController {
+            vc.data = "bbbbbb"
+        }
+    }
+    
+    
 }
 

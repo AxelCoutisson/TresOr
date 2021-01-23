@@ -66,7 +66,7 @@
                                 <rect key="frame" x="20" y="846" width="374" height="30"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
-                                    <segue destination="nTP-hP-QUH" kind="show" id="N8n-CK-wTd"/>
+                                    <segue destination="nTP-hP-QUH" kind="presentation" id="Ety-ST-ywd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,13 +209,13 @@
                                 <rect key="frame" x="20" y="728" width="1280" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpM-yC-jVw">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS8-jD-ofr">
-                                        <rect key="frame" x="40" y="0.0" width="1240" height="100"/>
+                                        <rect key="frame" x="37" y="0.0" width="1243" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -271,15 +271,23 @@
                                     <constraint firstAttribute="bottom" secondItem="zen-Qm-vuj" secondAttribute="bottom" id="um5-Dw-U89"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2a-K3-Fbc">
+                                <rect key="frame" x="350" y="52" width="30" height="30"/>
+                                <connections>
+                                    <segue destination="TC8-VO-ATG" kind="unwind" unwindAction="retour:" id="h4u-so-OQe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NuW-tk-9K9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="v2a-K3-Fbc" secondAttribute="trailing" constant="20" id="1Cg-zT-u8Y"/>
                             <constraint firstItem="aDJ-U1-BUh" firstAttribute="top" secondItem="HUI-lr-ePZ" secondAttribute="topMargin" constant="20" id="4Ju-0T-nim"/>
                             <constraint firstItem="NuW-tk-9K9" firstAttribute="trailing" secondItem="Rp5-gl-CFA" secondAttribute="trailing" constant="20" id="6gH-UT-TCa"/>
                             <constraint firstItem="NuW-tk-9K9" firstAttribute="trailing" secondItem="hVU-dM-fvK" secondAttribute="trailing" constant="20" id="J84-zX-JaV"/>
                             <constraint firstItem="NuW-tk-9K9" firstAttribute="trailing" secondItem="2P0-bW-guG" secondAttribute="trailing" constant="20" id="R5c-sl-1oi"/>
                             <constraint firstItem="aDJ-U1-BUh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="HUI-lr-ePZ" secondAttribute="leadingMargin" constant="100" id="Rjc-Ch-jBS"/>
+                            <constraint firstItem="v2a-K3-Fbc" firstAttribute="top" secondItem="NuW-tk-9K9" secondAttribute="top" constant="20" id="Vn7-uJ-XSs"/>
                             <constraint firstItem="2P0-bW-guG" firstAttribute="leading" secondItem="NuW-tk-9K9" secondAttribute="leading" constant="20" id="XPj-xZ-wkz"/>
                             <constraint firstItem="pfw-51-FUG" firstAttribute="bottom" secondItem="NuW-tk-9K9" secondAttribute="bottom" constant="20" id="elo-Lg-0hO"/>
                             <constraint firstItem="Rp5-gl-CFA" firstAttribute="top" secondItem="hVU-dM-fvK" secondAttribute="bottom" constant="20" id="gff-Mz-cly"/>
@@ -309,6 +317,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT5-Hy-BdK" sceneMemberID="firstResponder"/>
+                <exit id="TC8-VO-ATG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="619" y="-62"/>
         </scene>
