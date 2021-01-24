@@ -38,7 +38,7 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDataS
         let row = indexPath.row
         cell.label.text = String(operations[row])
         cell.descri.text = String(descript[row])
-        cell.catego.text = String(categPick)
+        cell.catego.text = String(categorie[row])
         if operations[row] >= 0 {
             cell.backgroundColor = UIColor.green
         }
@@ -98,16 +98,7 @@ class AddViewController: UIViewController, UITextFieldDelegate, UITableViewDataS
         listeTransaction.dataSource = self
         picker.dataSource = self
         picker.delegate = self
-        if let sometexttest = data{
-            print(sometexttest)
-        }
         
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? ViewController {
-            vc.data = "bbbbbb"
-        }
     }
     
     

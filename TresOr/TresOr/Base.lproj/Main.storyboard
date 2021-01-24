@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon Argent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-7b-WKY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TresOr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-7b-WKY">
                                 <rect key="frame" x="120" y="64" width="174" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -49,15 +49,39 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajg-St-gbc">
+                                                    <rect key="frame" x="30" y="31" width="53" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="aAL-fU-b3v"/>
+                                                        <constraint firstAttribute="height" constant="20" id="h5c-1E-mYZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwP-Ht-khU">
+                                                    <rect key="frame" x="121" y="40" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1cc-og-VT8" firstAttribute="trailing" secondItem="acp-eU-CgO" secondAttribute="trailingMargin" id="BrJ-qT-L9A"/>
+                                                <constraint firstItem="OwP-Ht-khU" firstAttribute="leading" secondItem="ajg-St-gbc" secondAttribute="trailing" constant="10" id="GqH-dU-lmb"/>
+                                                <constraint firstItem="OwP-Ht-khU" firstAttribute="top" secondItem="acp-eU-CgO" secondAttribute="topMargin" constant="29" id="J4Y-cB-wa7"/>
+                                                <constraint firstItem="ajg-St-gbc" firstAttribute="leading" secondItem="acp-eU-CgO" secondAttribute="leadingMargin" constant="10" id="fBh-z8-DCK"/>
+                                                <constraint firstItem="ajg-St-gbc" firstAttribute="top" secondItem="acp-eU-CgO" secondAttribute="topMargin" constant="20" id="hzH-YX-pIi"/>
                                                 <constraint firstItem="1cc-og-VT8" firstAttribute="top" secondItem="acp-eU-CgO" secondAttribute="topMargin" id="mFW-4j-6hB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ajg-St-gbc" secondAttribute="bottom" constant="20" id="pqs-v9-A1b"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="1cc-og-VT8" secondAttribute="bottom" id="qGO-Xh-DAP"/>
+                                                <constraint firstItem="OwP-Ht-khU" firstAttribute="centerY" secondItem="1cc-og-VT8" secondAttribute="centerY" id="zEk-Mb-BtE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="label" destination="1cc-og-VT8" id="t0f-9O-fDu"/>
+                                            <outlet property="catego" destination="ajg-St-gbc" id="fiK-Ud-vEs"/>
+                                            <outlet property="descri" destination="OwP-Ht-khU" id="hl9-Qz-5bf"/>
+                                            <outlet property="label" destination="1cc-og-VT8" id="8W5-Ta-Wgk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

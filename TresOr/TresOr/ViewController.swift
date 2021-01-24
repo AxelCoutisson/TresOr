@@ -10,7 +10,7 @@ import Charts
 
 class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource {
     
-    // MARK: - Title6666666666666
+    // MARK: - Title
     @IBOutlet weak var titre: UILabel!
     
     // MARK: - PieChart
@@ -47,18 +47,27 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
     
     
     // MARK: - TableView
-    var operations = [Double]()
     @IBOutlet weak var listeTransaction: UITableView!
+    var operations = [Double]()
+    var descript = [String]()
+    var categorie = [String]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return operations.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        //let cell2 = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! TableViewCell2
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell2
         
         let row = indexPath.row
         cell.label.text = String(operations[row])
+        cell.descri.text = String(descript[row])
+        cell.catego.text = String(categorie[row])
+        if operations[row] >= 0 {
+            cell.backgroundColor = UIColor.green
+        }
+        else{
+            cell.backgroundColor = UIColor.red
+        }
         return cell
     }
 
@@ -73,18 +82,22 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         
     }
     // MARK: - Envoie des informations
-    var data: String?
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? AddViewController {
-            vc.data = "aaaa"
+            vc.operations = operations
+            vc.descript = descript
+            vc.categorie = categorie
         }
         
     }
     // MARK: - Retour sur la vue
     @IBAction func retour(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source
-        // Use data from the view controller which initiated the unwind segue
+        if let vc = unwindSegue.source as? AddViewController {
+            operations = vc.operations
+            descript = vc.descript
+            categorie = vc.categorie
+        }
     }
     
 }
-
