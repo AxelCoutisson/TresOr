@@ -13,6 +13,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
     // MARK: - Title
     @IBOutlet weak var titre: UILabel!
     
+    
+    
+    
     // MARK: - PieChart
     @IBOutlet var pieView: PieChartView!
     func setupPieChart() {
@@ -23,26 +26,63 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         pieView.isUserInteractionEnabled = false
         
         //pieView.legend.enabled = false
-        
-        var entries: [PieChartDataEntry] = Array()
-        entries.append(PieChartDataEntry(value: 50.0, label: "Takeout"))
-        entries.append(PieChartDataEntry(value: 30.0, label: "Healthy Food"))
-        entries.append(PieChartDataEntry(value: 20.0, label: "Soft Drink"))
-        entries.append(PieChartDataEntry(value: 10.0, label: "Water"))
-        entries.append(PieChartDataEntry(value: 40.0, label: "Home Meals"))
-            
-        let dataSet = PieChartDataSet(entries: entries, label: "")
-            
-        let c1 = NSUIColor(hex: 0x3A015C)
-        let c2 = NSUIColor(hex: 0x4F0147)
-        let c3 = NSUIColor(hex: 0x35012C)
-        let c4 = NSUIColor(hex: 0x290025)
-        let c5 = NSUIColor(hex: 0x11001C)
+    }
     
-        dataSet.colors = [c1, c2, c3, c4, c5]
-        dataSet.drawValuesEnabled = false
+    func updatePieChart() {
+        var entries: [PieChartDataEntry] = Array()
         
+        var valeurs = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        
+        if categorie.count > 0{
+            for i in 0...categorie.count-1{
+                let row = categorie[i]
+                var index = 0
+                switch row {
+                case "Aucune":
+                    index = 0
+                case "Logement":
+                    index = 1
+                case "Alimentation":
+                    index = 2
+                case "Loisirs":
+                    index = 3
+                case "Courses":
+                    index = 4
+                case "Shopping":
+                    index = 5
+                case "Santé":
+                    index = 6
+                case "Transport":
+                    index = 7
+                default:
+                    print("default")
+                }
+                if operations[i] < 0{
+                    index = index + 8
+                }
+                valeurs[index] = valeurs[index] + operations[i]
+            }
+            
+        }
+        let pieLabels = ["Aucune +", "Logement +", "Alimentation +", "Loisirs +", "Courses +", "Shopping +", "Santé +", "Transport +","Aucune -", "Logement -", "Alimentation -", "Loisirs -", "Courses -", "Shopping -", "Santé -", "Transport -"]
+        let pieColor = [0x90E0F0, 0x002AFF, 0xFFD480, 0xB37700, 0xFFB3B3, 0xFF2A00, 0xD5FFCC, 0x008015, 0x9900D4, 0x33002A, 0xF2E6FF, 0xBB99FF,0xC4FF4D,0xCCCC00, 0xB3E5FF, 0x4D88FF]
+        
+        for i in 0...15{
+            if valeurs[i] != 0{
+                entries.append(PieChartDataEntry(value: abs(valeurs[i]), label: pieLabels[i]))
+            }
+        }
+        let dataSet = PieChartDataSet(entries: entries, label: "")
+        
+        for i in 0...15{
+            if valeurs[i] != 0{
+                dataSet.colors.append(NSUIColor(hex: pieColor[i]))
+                
+            }
+        }
+        dataSet.drawValuesEnabled = false
         pieView.data = PieChartData(dataSet: dataSet)
+        
     }
     
     
@@ -79,6 +119,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         listeTransaction.dataSource = self
         setupPieChart()
+        updatePieChart()
         
     }
     // MARK: - Envoie des informations
@@ -97,6 +138,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
             operations = vc.operations
             descript = vc.descript
             categorie = vc.categorie
+            updatePieChart()
         }
     }
     
