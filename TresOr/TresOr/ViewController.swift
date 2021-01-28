@@ -10,6 +10,8 @@ import Charts
 
 class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource {
     
+    
+    
     // MARK: - Title
     @IBOutlet weak var titre: UILabel!
     
@@ -95,21 +97,22 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return operations.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell2
-        
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! TableViewCell2
         let row = indexPath.row
-        cell.label.text = String(operations[row])
-        cell.descri.text = String(descript[row])
-        cell.catego.text = String(categorie[row])
+        cell2.label.text = String(operations[row])
+        cell2.descri.text = String(descript[row])
+        cell2.catego.text = String(categorie[row])
         if operations[row] >= 0 {
-            cell.backgroundColor = UIColor.green
+            cell2.backgroundColor = UIColor.green
         }
         else{
-            cell.backgroundColor = UIColor.red
+            cell2.backgroundColor = UIColor.red
         }
-        return cell
+        return cell2
     }
+    
 
     
     
@@ -139,6 +142,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
             descript = vc.descript
             categorie = vc.categorie
             updatePieChart()
+            listeTransaction.reloadData()
         }
     }
     
